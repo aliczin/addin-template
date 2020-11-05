@@ -1,0 +1,3 @@
+powershell.exe -Command Invoke-WebRequest -Uri https://aka.ms/vs/16/release/vs_buildtools.exe -OutFile $env:temp\vs_buildtools.exe
+
+%temp%\vs_buildtools.exe --wait --norestart --nocache --installPath C:/BuildTools --addProductLang En-us --addProductLang Ru-ru --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.CMake.Project --add Microsoft.VisualStudio.Component.VC.ATL

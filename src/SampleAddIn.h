@@ -32,6 +32,7 @@ private:
     std::string extensionName() override;
 
     variant_t add(const variant_t &a, const variant_t &b);
+    variant_t minus(const variant_t &a, const variant_t &b);
 
     void message(const variant_t &msg);
 

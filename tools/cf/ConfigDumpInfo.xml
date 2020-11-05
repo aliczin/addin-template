@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
+	<ConfigVersions>
+		<Metadata name="CommonTemplate.SampleAddIn" id="50501876-8fb0-4c84-bff4-814e98f6fb74" configVersion="1d0aaa2c4a879f41929981bf2aaed43600000000"/>
+		<Metadata name="CommonTemplate.SampleAddIn.Template" id="50501876-8fb0-4c84-bff4-814e98f6fb74.0" configVersion="149012f163981b49a0704dfea63f05b400000000"/>
+		<Metadata name="Configuration.NativeAddInTesting" id="c8e62aa2-1b0b-441b-91cf-c71d66024e10" configVersion="97c64a5ae33b9448b75aa62480975fff00000000"/>
+		<Metadata name="DataProcessor.SampleAddInTest" id="52e37f24-f123-4d33-b4e8-c0d0e6555dca" configVersion="8e24736074079a479ee1daf5191985fd00000000"/>
+		<Metadata name="DataProcessor.SampleAddInTest.Form.Form" id="6489f898-1f5e-49bb-ab6d-623b52d50473" configVersion="3be86e16f2a2314faa4d142ff623d8a200000000"/>
+		<Metadata name="DataProcessor.SampleAddInTest.Form.Form.Form" id="6489f898-1f5e-49bb-ab6d-623b52d50473.0" configVersion="4ba945db1515f742b88df66db315764e00000000"/>
+		<Metadata name="Language.English" id="41238f17-0493-493a-884c-fa24aa58e73b" configVersion="786107283b18a14d91515c8e7341b4b000000000"/>
+		<Metadata name="Language.Русский" id="f31ac8b6-7038-4dd5-adfd-a14040ef8b46" configVersion="3ca0a9ee0911d94b847a6aa365370f5d00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

@@ -1,0 +1,7 @@
+build-x64
+build-x86
+local-dist
+SampleAddInBundle.zip
+build
+Template.bin
+out

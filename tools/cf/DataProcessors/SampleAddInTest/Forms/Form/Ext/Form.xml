@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Loading" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Loading testing</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Loading</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="LoadingExtendedTooltip" id="7"/>
+			<ChildItems>
+				<LabelField name="LoadStatus" id="3">
+					<DataPath>LoadStatus</DataPath>
+					<ContextMenu name="LoadStatusContextMenu" id="4"/>
+					<ExtendedTooltip name="LoadStatusExtendedTooltip" id="5"/>
+				</LabelField>
+				<Button name="LoadSampleAddin" id="1">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.LoadSampleAddin</CommandName>
+					<ExtendedTooltip name="LoadSampleAddinExtendedTooltip" id="2"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="AddAndMinus" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add and minus</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add and minus</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="AddAndMinusExtendedTooltip" id="9"/>
+			<ChildItems>
+				<InputField name="Left" id="10">
+					<DataPath>Left</DataPath>
+					<ContextMenu name="LeftContextMenu" id="11"/>
+					<ExtendedTooltip name="LeftExtendedTooltip" id="12"/>
+				</InputField>
+				<InputField name="Rigth" id="13">
+					<DataPath>Rigth</DataPath>
+					<ContextMenu name="RigthContextMenu" id="14"/>
+					<ExtendedTooltip name="RigthExtendedTooltip" id="15"/>
+				</InputField>
+				<LabelField name="Result" id="16">
+					<DataPath>Result</DataPath>
+					<ContextMenu name="ResultContextMenu" id="17"/>
+					<ExtendedTooltip name="ResultExtendedTooltip" id="18"/>
+				</LabelField>
+				<Button name="Add" id="19">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Add</CommandName>
+					<ExtendedTooltip name="AddExtendedTooltip" id="20"/>
+				</Button>
+				<Button name="Minus" id="21">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Minus</CommandName>
+					<ExtendedTooltip name="MinusExtendedTooltip" id="22"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.SampleAddInTest</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="LoadStatus" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Load status</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Left" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Left</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Rigth" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Rigth</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Result" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Result</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="LoadSampleAddin" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Load sample addin</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Load sample addin</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>LoadSampleAddin</Action>
+		</Command>
+		<Command name="Add" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Add</Action>
+		</Command>
+		<Command name="Minus" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Minus</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Minus</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Minus</Action>
+		</Command>
+	</Commands>
+</Form>

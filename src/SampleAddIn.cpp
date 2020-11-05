@@ -44,6 +44,7 @@ SampleAddIn::SampleAddIn() {
     // Method registration.
     // Lambdas as method handlers are not supported.
     AddMethod(L"Add", L"Сложить", this, &SampleAddIn::add);
+    AddMethod(L"Delete", L"Вычесть", this, &SampleAddIn::minus);
     AddMethod(L"Message", L"Сообщить", this, &SampleAddIn::message);
     AddMethod(L"CurrentDate", L"ТекущаяДата", this, &SampleAddIn::currentDate);
     AddMethod(L"Assign", L"Присвоить", this, &SampleAddIn::assign);
@@ -68,6 +69,14 @@ variant_t SampleAddIn::add(const variant_t &a, const variant_t &b) {
         return std::get<int32_t>(a) + std::get<int32_t>(b);
     } else if (std::holds_alternative<std::string>(a) && std::holds_alternative<std::string>(b)) {
         return std::string{std::get<std::string>(a) + std::get<std::string>(b)};
+    } else {
+        throw std::runtime_error(u8"Неподдерживаемые типы данных");
+    }
+}
+
+variant_t SampleAddIn::minus(const variant_t &a, const variant_t &b) {
+    if (std::holds_alternative<int32_t>(a) && std::holds_alternative<int32_t>(b)) {
+        return std::get<int32_t>(a) - std::get<int32_t>(b);
     } else {
         throw std::runtime_error(u8"Неподдерживаемые типы данных");
     }
